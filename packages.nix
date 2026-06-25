@@ -4,20 +4,25 @@
   programs.hyprland.enable = true;
   programs.zsh.enable = true;
   programs.nix-ld.enable = true;
+  programs.steam.enable = true;
   programs.java.enable = true;
 
   environment.systemPackages = with pkgs; [
     javaPackages.compiler.openjdk17-bootstrap jdt-language-server
+    ghc haskellPackages.haskell-language-server
+    git github-cli forgejo-cli
     man-pages man-pages-posix
+    discord telegram-desktop
     clang clang-tools gcc
     hyprpaper hyprlock
-    xmake cmake ninja
-    git github-cli
+    python3 pyrefly
+    readline rlwrap
+    neovim neovide
     zig zls
+    xmake
     rustup
     fastfetch
     zsh
-    neovim
     gdm
     librewolf
     fuzzel
@@ -28,16 +33,9 @@
     raylib
     wget
     brightnessctl
-    fmt
-    m4
-    bison
-    python3
     lua
-    pkg-config
     cloudflare-warp
     cloc
-    gnumake
-    discord
     steam
     gdb
     pavucontrol
@@ -46,10 +44,12 @@
     openssl
     fzf
     mpv
-  ];
-
-  # Allow some unfree programs
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "cloudflare-warp" "discord" "steam" "steam-unwrapped"
+    grim
+    slurp
+    feh
+    bvi 
+    file
+    go
+    vulkan-tools
   ];
 }
