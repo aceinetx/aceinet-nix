@@ -6,25 +6,19 @@
 }:
 
 {
-  programs.zsh.enable = true;
-  programs.nix-ld.enable = true;
-  programs.steam.enable = true;
-  programs.java.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    libX11
-    wayland
-    fontconfig
-    libxcursor
-    libxext
-    libxkbcommon
-    xinput
+  imports = [
+    ./packages/zsh.nix
+    ./packages/hyprland.nix
+    ./packages/java.nix
+    ./packages/steam.nix
   ];
-  programs.hyprland.enable = true;
 
   environment.systemPackages = with pkgs; [
     javaPackages.compiler.openjdk17-bootstrap
     jdt-language-server
-    ghc haskellPackages.haskell-language-server ormolu
+    ghc
+    haskellPackages.haskell-language-server
+    ormolu
     git
     github-cli
     forgejo-cli
@@ -41,7 +35,8 @@
     pyrefly
     readline
     rlwrap
-    vim neovim
+    vim
+    neovim
     neovide
     nil
     nixfmt

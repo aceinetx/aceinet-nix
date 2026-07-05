@@ -4,5 +4,6 @@
     ./packages.nix
     ./bootloader.nix
     ./unfree.nix
+    ./nix-ld.nix
   ];
 }
