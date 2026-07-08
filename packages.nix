@@ -85,5 +85,6 @@
     nodejs
     godotPackages_4_7.godot
     gdtoolkit_4
+    bluetui
   ];
 }

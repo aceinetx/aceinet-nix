@@ -5,5 +5,6 @@
     ./bootloader.nix
     ./unfree.nix
     ./nix-ld.nix
+    ./docker.nix
   ];
 }

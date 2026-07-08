@@ -49,6 +49,9 @@
               dwl.packages.x86_64-linux.default
               gf2.packages.x86_64-linux.default
             ];
+            environment.sessionVariables = {
+              EDITOR = "nvim";
+            };
           }
         ];
       };
