@@ -86,5 +86,6 @@
     godotPackages_4_7.godot
     gdtoolkit_4
     bluetui
+    wineWow64Packages.stable
   ];
 }
