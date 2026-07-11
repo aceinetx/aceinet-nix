@@ -87,5 +87,6 @@
     gdtoolkit_4
     bluetui
     wineWow64Packages.stable
+    valgrind
   ];
 }
