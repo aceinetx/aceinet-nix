@@ -88,5 +88,6 @@
     bluetui
     wineWow64Packages.stable
     valgrind
+    binwalk
   ];
 }
