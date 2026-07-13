@@ -1,6 +1,4 @@
 {
-  lib,
-  config,
   pkgs,
   ...
 }:
@@ -11,6 +9,8 @@
     ./packages/hyprland.nix
     ./packages/java.nix
     ./packages/steam.nix
+    ./packages/gdm.nix
+    ./packages/warp.nix
   ];
 
   environment.systemPackages = with pkgs; [
