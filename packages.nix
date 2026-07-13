@@ -90,5 +90,6 @@
     valgrind
     binwalk
     nftables
+    ghidra-bin
   ];
 }
