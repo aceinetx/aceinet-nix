@@ -89,5 +89,6 @@
     wineWow64Packages.stable
     valgrind
     binwalk
+    nftables
   ];
 }

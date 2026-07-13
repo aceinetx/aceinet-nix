@@ -6,6 +6,6 @@
     ./unfree.nix
     ./nix-ld.nix
     ./docker.nix
-    ./zapret.nix
+    ./zapret/zapret.nix
   ];
 }
