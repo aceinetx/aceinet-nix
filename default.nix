@@ -6,6 +6,8 @@
     ./unfree.nix
     ./nix-ld.nix
     ./docker.nix
+    ./virtualbox.nix
+    ./editor.nix
     ./zapret/zapret.nix
   ];
 }
