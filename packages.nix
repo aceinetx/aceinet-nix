@@ -79,6 +79,7 @@
     qrencode
     zbar
     llvm
+    lld
     steam-run
     aseprite
     pnpm
