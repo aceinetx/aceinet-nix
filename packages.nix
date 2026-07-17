@@ -92,5 +92,6 @@
     binwalk
     nftables
     ghidra-bin
+    ly
   ];
 }
