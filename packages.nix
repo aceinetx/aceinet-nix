@@ -9,8 +9,8 @@
     ./packages/hyprland.nix
     ./packages/java.nix
     ./packages/steam.nix
-    ./packages/gdm.nix
-    ./packages/warp.nix
+    ./packages/ly.nix
+    # ./packages/warp.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -21,7 +21,7 @@
     ormolu
     git
     github-cli
-    forgejo-cli
+    # forgejo-cli
     man-pages
     man-pages-posix
     discord
@@ -37,7 +37,7 @@
     rlwrap
     vim
     neovim
-    neovide
+    # neovide
     nil
     nixfmt
     zig
@@ -57,7 +57,7 @@
     wget
     brightnessctl
     lua
-    cloudflare-warp
+    # cloudflare-warp
     cloc
     steam
     gdb
@@ -90,7 +90,7 @@
     wineWow64Packages.stable
     valgrind
     binwalk
-    nftables
+    # nftables
     ghidra-bin
     ly
   ];
