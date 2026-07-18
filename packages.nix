@@ -78,8 +78,6 @@
     fasm
     qrencode
     zbar
-    llvm
-    lld
     steam-run
     aseprite
     pnpm
@@ -93,5 +91,9 @@
     # nftables
     ghidra-bin
     ly
+    llvm
+    zstd
+    libclang
+    lld
   ];
 }
