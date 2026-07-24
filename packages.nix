@@ -31,7 +31,7 @@
     gcc
     hyprpaper
     hyprlock
-    python3
+    python314
     pyrefly
     readline
     rlwrap
@@ -95,5 +95,7 @@
     zstd
     libclang
     lld
+    swaybg
+    busybox
   ];
 }

@@ -4,6 +4,7 @@
     enable = true;
     shellAliases = {
       cd = "z";
+      vi = "busybox vi";
     };
   };
   programs.zsh.ohMyZsh = {
