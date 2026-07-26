@@ -1,16 +1,10 @@
-{
-  pkgs,
-  ...
-}:
-
-{
+{ pkgs, ... }: {
   imports = [
     ./packages/zsh.nix
     ./packages/hyprland.nix
     ./packages/java.nix
     ./packages/steam.nix
     ./packages/ly.nix
-    # ./packages/warp.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -21,7 +15,6 @@
     ormolu
     git
     github-cli
-    # forgejo-cli
     man-pages
     man-pages-posix
     discord
@@ -30,14 +23,12 @@
     clang-tools
     gcc
     hyprpaper
-    hyprlock
     python314
     pyrefly
     readline
     rlwrap
     vim
     neovim
-    # neovide
     nil
     nixfmt
     zig
@@ -57,7 +48,6 @@
     wget
     brightnessctl
     lua
-    # cloudflare-warp
     cloc
     steam
     gdb
@@ -88,7 +78,6 @@
     wineWow64Packages.stable
     valgrind
     binwalk
-    # nftables
     ghidra-bin
     ly
     llvm

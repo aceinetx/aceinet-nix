@@ -1,5 +1,4 @@
-{ lib, ... }:
-{
+{ ... }: {
   imports = [
     ./kernel.nix
     ./experimental.nix
@@ -10,7 +9,6 @@
     ./docker.nix
     ./virtualbox.nix
     ./editor.nix
-    # ./zapret/zapret.nix
     ./happ.nix
   ];
 }
