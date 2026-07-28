@@ -17,7 +17,7 @@
   outputs =
     {
       self,
-      _,
+      nixpkgs,
       dwl,
       gf2,
       happ-nixos,
