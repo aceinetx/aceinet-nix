@@ -8,7 +8,7 @@
     ./nix-ld.nix
     ./docker.nix
     ./virtualbox.nix
-    ./editor.nix
+    ./session-vars.nix
     ./happ.nix
   ];
 }
