@@ -83,5 +83,6 @@
     lld
     swaybg
     busybox
+    fontconfig
   ];
 }
