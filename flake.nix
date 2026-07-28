@@ -2,8 +2,15 @@
   description = "aceinet's nixos flake";
 
   inputs = {
-    dwl.url = "git+https://codeberg.org/aceinet/dwl.git";
-    gf2.url = "github:aceinetx/gf";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    dwl = {
+      url = "git+https://codeberg.org/aceinet/dwl.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    gf2 = {
+      url = "github:aceinetx/gf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     happ-nixos.url = "github:aceinetx/happ-nixos";
   };
 
