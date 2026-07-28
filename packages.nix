@@ -2,14 +2,11 @@
   imports = [
     ./packages/zsh.nix
     ./packages/hyprland.nix
-    ./packages/java.nix
     ./packages/steam.nix
     ./packages/ly.nix
   ];
 
   environment.systemPackages = with pkgs; [
-    javaPackages.compiler.openjdk17-bootstrap
-    jdt-language-server
     ghc
     haskellPackages.haskell-language-server
     ormolu
