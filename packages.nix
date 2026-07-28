@@ -34,7 +34,6 @@
     rustup
     fastfetch
     zsh
-    gdm
     librewolf
     fuzzel
     thunar
