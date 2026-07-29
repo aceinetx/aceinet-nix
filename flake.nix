@@ -28,18 +28,25 @@
       happ-nixos,
     }:
     {
-      nixosModules.aceinet-nix = { lib, config, ... }: {
-        imports = [
-          ./default.nix
+      nixosModules.aceinet-nix =
+        { system }:
+        {
+          lib,
+          config,
+          ...
+        }:
+        {
+          imports = [
+            ./default.nix
 
-          happ-nixos.nixosModules.happ-nixos
-        ];
+            happ-nixos.nixosModules.happ-nixos
+          ];
 
-        environment.systemPackages = [
-          dwl.packages.x86_64-linux.default
-          gf2.packages.x86_64-linux.default
-          krbc.packages.x86_64-linux.default
-        ];
-      };
+          environment.systemPackages = [
+            dwl.packages.${system}.default
+            gf2.packages.${system}.default
+            krbc.packages.${system}.default
+          ];
+        };
     };
 }
