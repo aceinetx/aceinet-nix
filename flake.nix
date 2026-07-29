@@ -11,6 +11,10 @@
       url = "github:aceinetx/gf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    krbc = {
+      url = "github:aceinetx/krbc";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     happ-nixos.url = "github:aceinetx/happ-nixos";
   };
 
@@ -20,6 +24,7 @@
       nixpkgs,
       dwl,
       gf2,
+      krbc,
       happ-nixos,
     }:
     {
@@ -33,6 +38,7 @@
         environment.systemPackages = [
           dwl.packages.x86_64-linux.default
           gf2.packages.x86_64-linux.default
+          krbc.packages.x86_64-linux.default
         ];
       };
     };
