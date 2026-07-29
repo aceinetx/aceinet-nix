@@ -42,11 +42,15 @@
             happ-nixos.nixosModules.happ-nixos
           ];
 
-          environment.systemPackages = [
-            dwl.packages.${system}.default
-            gf2.packages.${system}.default
-            krbc.packages.${system}.default
-          ];
+          environment.systemPackages =
+            let
+              packages = [
+                dwl
+                gf2
+                krbc
+              ];
+            in
+            builtins.map (x: x.packages.${system}.default) packages;
         };
     };
 }
