@@ -14,7 +14,7 @@
     github-cli
     man-pages
     man-pages-posix
-    discord
+    vesktop
     telegram-desktop
     clang
     clang-tools
