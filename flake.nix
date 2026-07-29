@@ -29,7 +29,7 @@
     }:
     {
       nixosModules.aceinet-nix =
-        { system }:
+        system:
         {
           lib,
           config,
