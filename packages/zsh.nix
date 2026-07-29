@@ -4,6 +4,7 @@
     shellAliases = {
       cd = "z";
       vi = "busybox vi";
+      wbuild = "cc wbuild.c -o /tmp/wbuild && /tmp/wbuild";
     };
   };
   programs.zsh.ohMyZsh = {
