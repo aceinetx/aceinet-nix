@@ -6,6 +6,7 @@
     ./packages/ly.nix
     ./packages/gnupg.nix
     ./packages/pcscd.nix
+    ./packages/ssh.nix
   ];
 
   environment.systemPackages = with pkgs; [
