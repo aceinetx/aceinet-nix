@@ -4,6 +4,8 @@
     ./packages/hyprland.nix
     ./packages/steam.nix
     ./packages/ly.nix
+    ./packages/gnupg.nix
+    ./packages/pcscd.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -83,5 +85,7 @@
     swaybg
     busybox
     fontconfig
+    gnupg
+    pinentry-curses
   ];
 }
