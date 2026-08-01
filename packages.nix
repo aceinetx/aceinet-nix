@@ -22,7 +22,8 @@
     clang-tools
     gcc
     hyprpaper
-    python314
+    python314.withPackages
+    (python-pkgs: with python-pkgs; [ requests ])
     pyrefly
     readline
     rlwrap
