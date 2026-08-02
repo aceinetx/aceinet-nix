@@ -16,6 +16,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     happ-nixos.url = "github:aceinetx/happ-nixos";
+    home-manager = {
+      url = "github:nix-community/home-manager/release-26.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -26,6 +30,7 @@
       gf2,
       krbc,
       happ-nixos,
+      home-manager,
     }:
     {
       nixosModules.aceinet-nix =
@@ -38,8 +43,10 @@
         {
           imports = [
             ./default.nix
+            ./home.nix
 
             happ-nixos.nixosModules.happ-nixos
+            home-manager.nixosModules.home-manager
           ];
 
           environment.systemPackages =

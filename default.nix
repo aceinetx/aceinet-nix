@@ -10,5 +10,6 @@
     ./virtualbox.nix
     ./session-vars.nix
     ./happ.nix
+    ./users.nix
   ];
 }
