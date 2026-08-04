@@ -48,7 +48,13 @@
         {
           imports = [
             ./default.nix
-            ./home.nix
+            (import ./home.nix (
+              with lampfm;
+              {
+                inherit createLampFMConfig;
+                inherit system;
+              }
+            ))
 
             happ-nixos.nixosModules.happ-nixos
             home-manager.nixosModules.home-manager
