@@ -15,6 +15,10 @@
       url = "github:aceinetx/krbc";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    lampfm = {
+      url = "github:aceinetx/lampfm";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     happ-nixos.url = "github:aceinetx/happ-nixos";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -29,6 +33,7 @@
       dwl,
       gf2,
       krbc,
+      lampfm,
       happ-nixos,
       home-manager,
     }:
@@ -55,6 +60,7 @@
                 dwl
                 gf2
                 krbc
+                lampfm
               ];
             in
             builtins.map (x: x.packages.${system}.default) packages;
