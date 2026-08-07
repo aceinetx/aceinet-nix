@@ -92,5 +92,6 @@
     fontconfig
     gnupg
     pinentry-curses
+    qbittorrent
   ];
 }
