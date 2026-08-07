@@ -93,5 +93,6 @@
     gnupg
     pinentry-curses
     qbittorrent
+    wl-clipboard
   ];
 }
