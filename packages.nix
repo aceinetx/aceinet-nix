@@ -97,5 +97,6 @@
     pinentry-curses
     qbittorrent
     wl-clipboard
+    ripgrep
   ];
 }
