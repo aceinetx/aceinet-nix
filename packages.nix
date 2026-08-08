@@ -38,7 +38,10 @@
     zig
     zls
     xmake
-    rustup
+    cargo
+    rust-analyzer
+    rustc
+    rustfmt
     fastfetch
     zsh
     librewolf
