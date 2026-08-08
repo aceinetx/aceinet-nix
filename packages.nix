@@ -42,6 +42,7 @@
     rust-analyzer
     rustc
     rustfmt
+    clippy
     fastfetch
     zsh
     librewolf
