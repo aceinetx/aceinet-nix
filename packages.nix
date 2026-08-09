@@ -100,5 +100,6 @@
     wl-clipboard
     ripgrep
     ncdu
+    htop
   ];
 }
