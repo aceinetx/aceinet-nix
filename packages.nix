@@ -99,5 +99,6 @@
     qbittorrent
     wl-clipboard
     ripgrep
+    ncdu
   ];
 }
