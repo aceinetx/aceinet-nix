@@ -19,6 +19,10 @@
       url = "github:aceinetx/lampfm";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    bedrock-on-linux = {
+      url = "github:Wyze3306/BedrockOnLinux";
+      # inputs.nixpkgs.follows = "nixpkgs";
+    };
     happ-nixos.url = "github:aceinetx/happ-nixos";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -34,6 +38,7 @@
       gf2,
       krbc,
       lampfm,
+      bedrock-on-linux,
       happ-nixos,
       home-manager,
     }:
@@ -67,6 +72,7 @@
                 gf2
                 krbc
                 lampfm
+                bedrock-on-linux
               ];
             in
             builtins.map (x: x.packages.${system}.default) packages;
