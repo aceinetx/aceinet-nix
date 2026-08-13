@@ -56,6 +56,7 @@
             ./intel.nix
             ./pipewire.nix
             ./xdg.nix
+            ./ntsync.nix
 
             (import ./home.nix (
               with lampfm;
