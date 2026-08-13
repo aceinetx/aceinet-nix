@@ -7,6 +7,7 @@
     ./packages/gnupg.nix
     ./packages/pcscd.nix
     ./packages/doas.nix
+    ./packages/obs.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -102,5 +103,9 @@
     ncdu
     htop
     lldb
+    xdg-desktop-portal
+    xdg-desktop-portal-wlr
+    xdg-desktop-portal-gtk
+    vlc
   ];
 }

@@ -53,6 +53,10 @@
         {
           imports = [
             ./default.nix
+            ./intel.nix
+            ./pipewire.nix
+            ./xdg.nix
+
             (import ./home.nix (
               with lampfm;
               {
