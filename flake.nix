@@ -19,6 +19,10 @@
       url = "github:aceinetx/lampfm";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sizeof = {
+      url = "github:aceinetx/sizeof";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     bedrock-on-linux = {
       url = "github:Wyze3306/BedrockOnLinux";
       # inputs.nixpkgs.follows = "nixpkgs";
@@ -38,6 +42,7 @@
       gf2,
       krbc,
       lampfm,
+      sizeof,
       bedrock-on-linux,
       happ-nixos,
       home-manager,
@@ -77,6 +82,7 @@
                 gf2
                 krbc
                 lampfm
+                sizeof
                 bedrock-on-linux
               ];
             in
