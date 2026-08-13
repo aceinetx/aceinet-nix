@@ -101,5 +101,6 @@
     ripgrep
     ncdu
     htop
+    lldb
   ];
 }
