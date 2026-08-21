@@ -8,6 +8,8 @@
     ./packages/pcscd.nix
     ./packages/doas.nix
     ./packages/obs.nix
+    ./packages/sway.nix
+    ./packages/flatpak.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -107,5 +109,6 @@
     xdg-desktop-portal-wlr
     xdg-desktop-portal-gtk
     vlc
+    javaPackages.compiler.openjdk17
   ];
 }

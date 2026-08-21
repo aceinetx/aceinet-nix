@@ -32,6 +32,10 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    zapret-discord-youtube = {
+      url = "github:kartavkun/zapret-discord-youtube";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -46,6 +50,7 @@
       bedrock-on-linux,
       happ-nixos,
       home-manager,
+      zapret-discord-youtube,
     }:
     {
       nixosModules.aceinet-nix =
@@ -73,6 +78,34 @@
 
             happ-nixos.nixosModules.happ-nixos
             home-manager.nixosModules.home-manager
+
+            zapret-discord-youtube.nixosModules.withTestTools
+            {
+              services.zapret-discord-youtube = {
+                enable = true;
+                config = "general(ALT11)";
+
+                gameFilter = "null";
+
+                listGeneral = [
+                  "example.com"
+                  "test.org"
+                  "mysite.net"
+                ];
+
+                listExclude = [
+                  "ubisoft.com"
+                  "origin.com"
+                ];
+
+                ipsetAll = [
+                  "192.168.1.0/24"
+                  "10.0.0.1"
+                ];
+
+                ipsetExclude = [ "203.0.113.0/24" ];
+              };
+            }
           ];
 
           environment.systemPackages =
