@@ -109,6 +109,7 @@
     xdg-desktop-portal-wlr
     xdg-desktop-portal-gtk
     vlc
-    javaPackages.compiler.openjdk17
+    javaPackages.compiler.openjdk25
+    maven
   ];
 }
