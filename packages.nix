@@ -112,5 +112,6 @@
     vlc
     javaPackages.compiler.openjdk25
     jdt-language-server
+    udev
   ];
 }

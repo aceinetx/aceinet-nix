@@ -116,7 +116,6 @@
                 krbc
                 lampfm
                 sizeof
-                bedrock-on-linux
               ];
               pkgs = nixpkgs.legacyPackages.${system};
             in
