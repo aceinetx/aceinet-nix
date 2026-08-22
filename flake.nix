@@ -23,9 +23,9 @@
       url = "github:aceinetx/sizeof";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    bedrock-on-linux = {
-      url = "github:Wyze3306/BedrockOnLinux";
-      # inputs.nixpkgs.follows = "nixpkgs";
+    paperstrap = {
+      url = "git+https://codeberg.org/aceinet/paperstrap.git";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     happ-nixos.url = "github:aceinetx/happ-nixos";
     home-manager = {
@@ -47,7 +47,7 @@
       krbc,
       lampfm,
       sizeof,
-      bedrock-on-linux,
+      paperstrap,
       happ-nixos,
       home-manager,
       zapret-discord-youtube,
@@ -116,6 +116,7 @@
                 krbc
                 lampfm
                 sizeof
+                paperstrap
               ];
               pkgs = nixpkgs.legacyPackages.${system};
             in
