@@ -110,7 +110,7 @@
 
           environment.systemPackages =
             let
-              packages = [
+              flakePackages = builtins.map (x: x.packages.${system}.default) [
                 dwl
                 gf2
                 krbc
@@ -118,8 +118,12 @@
                 sizeof
                 bedrock-on-linux
               ];
+              pkgs = nixpkgs.legacyPackages.${system};
             in
-            builtins.map (x: x.packages.${system}.default) packages;
+            flakePackages
+            ++ [
+              pkgs.maven_4
+            ];
         };
     };
 }

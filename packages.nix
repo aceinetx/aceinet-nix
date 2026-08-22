@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   imports = [
     ./packages/zsh.nix
     ./packages/hyprland.nix
@@ -110,6 +111,6 @@
     xdg-desktop-portal-gtk
     vlc
     javaPackages.compiler.openjdk25
-    maven
+    jdt-language-server
   ];
 }
