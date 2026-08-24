@@ -9,7 +9,7 @@
     ./docker.nix
     ./virtualbox.nix
     ./session-vars.nix
-    ./happ.nix
     ./users.nix
+    ./networking.nix
   ];
 }

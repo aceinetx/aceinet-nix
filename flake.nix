@@ -77,35 +77,37 @@
             ))
 
             happ-nixos.nixosModules.happ-nixos
+            ./happ.nix
+
             home-manager.nixosModules.home-manager
 
-            zapret-discord-youtube.nixosModules.withTestTools
-            {
-              services.zapret-discord-youtube = {
-                enable = true;
-                config = "general(ALT11)";
-
-                gameFilter = "null";
-
-                listGeneral = [
-                  "example.com"
-                  "test.org"
-                  "mysite.net"
-                ];
-
-                listExclude = [
-                  "ubisoft.com"
-                  "origin.com"
-                ];
-
-                ipsetAll = [
-                  "192.168.1.0/24"
-                  "10.0.0.1"
-                ];
-
-                ipsetExclude = [ "203.0.113.0/24" ];
-              };
-            }
+            #           zapret-discord-youtube.nixosModules.withTestTools
+            #           {
+            #             services.zapret-discord-youtube = {
+            #               enable = true;
+            #               config = "general(ALT11)";
+            #
+            #               gameFilter = "null";
+            #
+            #               listGeneral = [
+            #                 "example.com"
+            #                 "test.org"
+            #                 "mysite.net"
+            #               ];
+            #
+            #               listExclude = [
+            #                 "ubisoft.com"
+            #                 "origin.com"
+            #               ];
+            #
+            #               ipsetAll = [
+            #                 "192.168.1.0/24"
+            #                 "10.0.0.1"
+            #               ];
+            #
+            #               ipsetExclude = [ "203.0.113.0/24" ];
+            #             };
+            #           }
           ];
 
           environment.systemPackages =
