@@ -114,5 +114,6 @@
     jdt-language-server
     udev
     gradle
+    marktext
   ];
 }
