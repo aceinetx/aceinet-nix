@@ -30,7 +30,7 @@
     (python314.withPackages (
       python-pkgs: with python-pkgs; [
         requests
-        amulet-map-editor
+        wxpython
       ]
     ))
     pyrefly
@@ -116,5 +116,6 @@
     udev
     gradle
     marktext
+    zip
   ];
 }

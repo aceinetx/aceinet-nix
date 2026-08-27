@@ -8,5 +8,9 @@
     libxext
     libxkbcommon
     xinput
+    wxwidgets_3_2
+    fuse
+    fuse2
+    fuse3
   ];
 }
