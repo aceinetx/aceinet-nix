@@ -114,8 +114,13 @@
     javaPackages.compiler.openjdk25
     jdk25
     jdt-language-server
+    (gradle-packages.mkGradle {
+      version = "9.4.1";
+      hash = "sha256-KrKVjyoeURIMMmytbzhRU7sR7pOzwhbF/M6/37t+xss=";
+      defaultJava = jdk25;
+      updateScriptMajorVersion = "9";
+    })
     udev
-    gradle_9
     marktext
     zip
   ];
