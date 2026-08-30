@@ -115,7 +115,7 @@
     jdk25
     jdt-language-server
     udev
-    gradle
+    gradle_9
     marktext
     zip
   ];
