@@ -112,6 +112,7 @@
     xdg-desktop-portal-gtk
     vlc
     javaPackages.compiler.openjdk25
+    jdk25
     jdt-language-server
     udev
     gradle

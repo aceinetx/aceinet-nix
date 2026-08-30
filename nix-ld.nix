@@ -12,5 +12,7 @@
     fuse
     fuse2
     fuse3
+    glib
+    nspr
   ];
 }
