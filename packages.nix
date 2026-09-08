@@ -111,7 +111,6 @@
     xdg-desktop-portal-wlr
     xdg-desktop-portal-gtk
     vlc
-    javaPackages.compiler.openjdk25
     jdk25
     jdt-language-server
     (gradle-packages.mkGradle {
@@ -123,5 +122,16 @@
     udev
     marktext
     zip
+    pkg-config
+    gtk3
+    webkitgtk_4_1
+    libsoup_3
+    nsis
+    upx
+    wails
+    ngspice
+    qucs-s
+    lmms
+    audacity
   ];
 }
