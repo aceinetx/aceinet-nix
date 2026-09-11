@@ -1,3 +1,3 @@
 { pkgs, ... }: {
-  boot.kernelPackages = pkgs.linuxKernel.packages.linux_7_1;
+  boot.kernelPackages = pkgs.linuxKernel.packages.linux_7_2;
 }

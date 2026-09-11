@@ -82,6 +82,7 @@
             ./pipewire.nix
             ./xdg.nix
             ./ntsync.nix
+            ./android.nix
 
             (import ./home.nix (
               with lampfm;
