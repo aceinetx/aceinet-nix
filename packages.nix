@@ -81,7 +81,6 @@
     qrencode
     zbar
     steam-run
-    aseprite
     pnpm
     nodejs
     godotPackages_4_7.godot
@@ -123,15 +122,8 @@
     marktext
     zip
     pkg-config
-    gtk3
-    webkitgtk_4_1
-    libsoup_3
-    nsis
-    upx
-    wails
-    ngspice
-    qucs-s
     lmms
     audacity
+    gimp
   ];
 }
