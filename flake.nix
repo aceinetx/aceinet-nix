@@ -83,6 +83,7 @@
             ./xdg.nix
             ./ntsync.nix
             ./android.nix
+            ./ssh.nix
 
             (import ./home.nix (
               with lampfm;
