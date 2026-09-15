@@ -125,5 +125,6 @@
     lmms
     audacity
     gimp
+    aseprite
   ];
 }
