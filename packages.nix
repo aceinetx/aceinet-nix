@@ -13,6 +13,12 @@
     ./packages/flatpak.nix
   ];
 
+  fonts.packages = with pkgs; [
+    corefonts
+    liberation_ttf
+    dejavu_fonts
+  ];
+
   environment.systemPackages = with pkgs; [
     ghc
     haskellPackages.haskell-language-server
@@ -85,8 +91,10 @@
     nodejs
     godotPackages_4_7.godot
     gdtoolkit_4
+    gdscript-formatter
     bluetui
     wineWow64Packages.stable
+    winetricks
     valgrind
     binwalk
     ghidra-bin
@@ -122,9 +130,11 @@
     marktext
     zip
     pkg-config
-    lmms
     audacity
     gimp
     aseprite
+    vital
+    lmms
+    carla
   ];
 }

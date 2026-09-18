@@ -14,5 +14,15 @@
     fuse3
     glib
     nspr
+    libsecret
+    glib
+    stdenv.cc.cc.lib
+    alsa-lib
+    freetype
+    curlWithGnuTls
+    libGL
+    stdenv.cc.cc
+    libXrender
+    libjack2
   ];
 }

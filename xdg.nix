@@ -11,6 +11,5 @@
   };
 
   environment.sessionVariables = {
-    XDG_CURRENT_DESKTOP = "wlroots";
   };
 }
