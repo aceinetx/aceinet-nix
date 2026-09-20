@@ -136,5 +136,8 @@
     vital
     lmms
     carla
+    yt-dlp
+    yt-dlg
+    mesa-demos
   ];
 }

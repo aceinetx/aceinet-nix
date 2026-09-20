@@ -78,12 +78,14 @@
         {
           imports = [
             ./default.nix
-            ./intel.nix
-            ./pipewire.nix
-            ./xdg.nix
-            ./ntsync.nix
-            ./android.nix
-            ./ssh.nix
+            ./modules/intel.nix
+            ./modules/pipewire.nix
+            ./modules/xdg.nix
+            ./modules/ntsync.nix
+            ./modules/android.nix
+            ./modules/ssh.nix
+            ./modules/openbox.nix
+            ./modules/printer.nix
 
             (import ./home.nix (
               with lampfm;

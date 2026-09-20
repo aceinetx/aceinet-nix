@@ -15,6 +15,14 @@
       };
     };
 
+    gtk = {
+      enable = true;
+      theme = {
+        name = "Adwaita-dark";
+        package = pkgs.gnome-themes-extra;
+      };
+    };
+
     xdg.configFile."lampfm/config.toml".text = createLampFMConfig { };
 
     home.stateVersion = "26.05";

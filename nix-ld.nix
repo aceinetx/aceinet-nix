@@ -21,6 +21,8 @@
     freetype
     curlWithGnuTls
     libGL
+    libGLX
+    libglvnd
     stdenv.cc.cc
     libXrender
     libjack2
