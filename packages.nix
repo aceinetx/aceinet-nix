@@ -139,5 +139,6 @@
     yt-dlp
     yt-dlg
     mesa-demos
+    libreoffice
   ];
 }
