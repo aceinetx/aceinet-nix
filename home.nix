@@ -4,24 +4,10 @@
   home-manager.users.aceinet = { pkgs, ... }: {
     home.packages = [ ];
 
-    programs.git = {
-      enable = true;
-
-      settings = {
-        user = {
-          name = "aceinetx";
-          email = "mouselin82@gmail.com";
-        };
-      };
-    };
-
-    gtk = {
-      enable = true;
-      theme = {
-        name = "Adwaita-dark";
-        package = pkgs.gnome-themes-extra;
-      };
-    };
+    imports = [
+      ./home_modules/git.nix
+      ./home_modules/gtk.nix
+    ];
 
     xdg.configFile."lampfm/config.toml".text = createLampFMConfig { };
 
