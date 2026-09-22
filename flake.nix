@@ -44,10 +44,6 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    zapret-discord-youtube = {
-      url = "github:kartavkun/zapret-discord-youtube";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -65,7 +61,6 @@
       mathualizer,
       happ-nixos,
       home-manager,
-      zapret-discord-youtube,
     }:
     {
       nixosModules.aceinet-nix =
