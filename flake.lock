@@ -404,8 +404,7 @@
         "namida": "namida",
         "nixpkgs": "nixpkgs",
         "paperstrap": "paperstrap",
-        "sizeof": "sizeof",
-        "zapret-discord-youtube": "zapret-discord-youtube"
+        "sizeof": "sizeof"
       }
     },
     "rust-analyzer-src": {
@@ -586,43 +585,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "zapret-discord-youtube": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "zapret-flowseal": "zapret-flowseal"
-      },
-      "locked": {
-        "lastModified": 1788726932,
-        "narHash": "sha256-MehJgJpN7BGMaDES9I0aj/YG6JkRlSj5RiZDZfclNpc=",
-        "owner": "kartavkun",
-        "repo": "zapret-discord-youtube",
-        "rev": "64a8ee76f4f2e4a8d2751cb732f13448ee1e4fcf",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kartavkun",
-        "repo": "zapret-discord-youtube",
-        "type": "github"
-      }
-    },
-    "zapret-flowseal": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1788121958,
-        "narHash": "sha256-WMpxbtA2OH340e4uuXR0tcUW0D6V9Kzs0KI1iKqkXBM=",
-        "owner": "Flowseal",
-        "repo": "zapret-discord-youtube",
-        "rev": "6cec828910d0809863205702182a3557d9d0e8c3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Flowseal",
-        "repo": "zapret-discord-youtube",
         "type": "github"
       }
     }

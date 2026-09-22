@@ -10,6 +10,6 @@
   };
 
   users.users.aceinet.openssh.authorizedKeys.keys = [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJZ8tI2m8MZI64Clbm+C5yDreLXh9sk89Z+0nFjjN9bz mouselin82@gmail.com"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL9mBJly7463TEMypiG/H9y8gV5/mb6td4fz1GW6XE/x mouselin82@gmail.com"
   ];
 }
