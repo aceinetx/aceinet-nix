@@ -133,12 +133,13 @@
     audacity
     gimp
     aseprite
-    vital
-    lmms
-    carla
     yt-dlp
     yt-dlg
     mesa-demos
     libreoffice
+    showmethekey
+    shotcut
+    imhex
+    vscodium
   ];
 }
