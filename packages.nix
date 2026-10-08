@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   imports = [
-    ./packages/zsh.nix
     ./packages/hyprland.nix
     ./packages/steam.nix
     ./packages/ly.nix
@@ -11,6 +10,7 @@
     ./packages/obs.nix
     ./packages/sway.nix
     ./packages/flatpak.nix
+    ./packages/zsh.nix
   ];
 
   fonts.packages = with pkgs; [
@@ -140,6 +140,8 @@
     showmethekey
     shotcut
     imhex
-    vscodium
+    tesseract
+    gnumake
+    cmake
   ];
 }

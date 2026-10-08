@@ -39,6 +39,14 @@
       url = "github:aceinetx/mathualizer";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    lyricedit = {
+      url = "github:aceinetx/lyricedit";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    raddebugger = {
+      url = "github:aceinetx/raddebugger-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     happ-nixos.url = "github:aceinetx/happ-nixos";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -59,6 +67,8 @@
       circuitjs,
       namida,
       mathualizer,
+      lyricedit,
+      raddebugger,
       happ-nixos,
       home-manager,
     }:
@@ -82,6 +92,8 @@
             ./modules/openbox.nix
             ./modules/printer.nix
             ./modules/happ.nix
+            ./modules/kde_connect.nix
+            ./modules/mingw.nix
 
             (import ./home.nix (
               with lampfm;
@@ -108,6 +120,8 @@
                 circuitjs
                 namida
                 mathualizer
+                lyricedit
+                raddebugger
               ];
               pkgs = nixpkgs.legacyPackages.${system};
             in
