@@ -47,6 +47,10 @@
       url = "github:aceinetx/raddebugger-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    drop = {
+      url = "github:aceinetx/drop?ref=cpp";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     happ-nixos.url = "github:aceinetx/happ-nixos";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -69,6 +73,7 @@
       mathualizer,
       lyricedit,
       raddebugger,
+      drop,
       happ-nixos,
       home-manager,
     }:
@@ -122,6 +127,7 @@
                 mathualizer
                 lyricedit
                 raddebugger
+                drop
               ];
               pkgs = nixpkgs.legacyPackages.${system};
             in
