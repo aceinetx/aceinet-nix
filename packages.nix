@@ -11,6 +11,7 @@
     ./packages/sway.nix
     ./packages/flatpak.nix
     ./packages/zsh.nix
+    ./packages/warp.nix
   ];
 
   fonts.packages = with pkgs; [
@@ -43,7 +44,7 @@
     readline
     rlwrap
     vim
-    neovim
+    # neovim
     nil
     nixfmt
     zig
@@ -143,5 +144,6 @@
     tesseract
     gnumake
     cmake
+    neovide
   ];
 }

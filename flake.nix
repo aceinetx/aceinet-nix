@@ -56,6 +56,17 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    zapret-discord-youtube = {
+      url = "github:kartavkun/zapret-discord-youtube";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    neovim-nightly-overlay = {
+      url = "github:nix-community/neovim-nightly-overlay?rev=42252f1d108c3e2051539162e1fb79e76f645af3";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+      };
+    };
+    nix-auth.url = "github:numtide/nix-auth";
   };
 
   outputs =
@@ -76,6 +87,9 @@
       drop,
       happ-nixos,
       home-manager,
+      zapret-discord-youtube,
+      neovim-nightly-overlay,
+      nix-auth,
     }:
     {
       nixosModules.aceinet-nix =
@@ -83,6 +97,7 @@
         {
           lib,
           config,
+          pkgs,
           ...
         }:
         {
@@ -99,6 +114,7 @@
             ./modules/happ.nix
             ./modules/kde_connect.nix
             ./modules/mingw.nix
+            ./modules/bincache.nix
 
             (import ./home.nix (
               with lampfm;
@@ -111,6 +127,38 @@
             happ-nixos.nixosModules.happ-nixos
 
             home-manager.nixosModules.home-manager
+
+            zapret-discord-youtube.nixosModules.withTestTools
+            {
+              services.zapret-discord-youtube = {
+                enable = true;
+                configName = "general(ALT11)";
+
+                gameFilter = "all";
+
+                # Добавляем кастомные домены в list-general-user.txt
+                listGeneral = [
+                  "example.com"
+                  "test.org"
+                  "mysite.net"
+                ];
+
+                # Добавляем домены в list-exclude-user.txt (исключения)
+                listExclude = [
+                  "ubisoft.com"
+                  "origin.com"
+                ];
+
+                # Добавляем IP адреса в ipset-all.txt
+                ipsetAll = [
+                  "192.168.1.0/24"
+                  "10.0.0.1"
+                ];
+
+                # Добавляем IP адреса в ipset-exclude-user.txt (исключения)
+                ipsetExclude = [ "203.0.113.0/24" ];
+              };
+            }
           ];
 
           environment.systemPackages =
@@ -128,12 +176,13 @@
                 lyricedit
                 raddebugger
                 drop
+                nix-auth
+                neovim-nightly-overlay
               ];
-              pkgs = nixpkgs.legacyPackages.${system};
             in
             flakePackages
             ++ [
-              pkgs.maven_4
+              pkgs.maven
             ];
         };
     };
