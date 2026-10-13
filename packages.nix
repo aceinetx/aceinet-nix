@@ -12,12 +12,7 @@
     ./packages/flatpak.nix
     ./packages/zsh.nix
     ./packages/warp.nix
-  ];
-
-  fonts.packages = with pkgs; [
-    corefonts
-    liberation_ttf
-    dejavu_fonts
+    ./packages/fonts.nix
   ];
 
   environment.systemPackages = with pkgs; [
