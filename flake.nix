@@ -51,6 +51,10 @@
       url = "github:aceinetx/drop?ref=cpp";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ish = {
+      url = "github:aceinetx/ish";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     happ-nixos.url = "github:aceinetx/happ-nixos";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -85,6 +89,7 @@
       lyricedit,
       raddebugger,
       drop,
+      ish,
       happ-nixos,
       home-manager,
       zapret-discord-youtube,
@@ -176,6 +181,7 @@
                 lyricedit
                 raddebugger
                 drop
+                ish
                 nix-auth
                 neovim-nightly-overlay
               ];
