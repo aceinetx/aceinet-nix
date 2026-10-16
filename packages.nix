@@ -140,5 +140,6 @@
     gnumake
     cmake
     neovide
+    tmux
   ];
 }
