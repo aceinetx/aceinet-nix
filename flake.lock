@@ -430,11 +430,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1792174459,
-        "narHash": "sha256-iwsUp7dxR5+N49sqRZv/ipA2xCwjjYUuGptYqopn62k=",
+        "lastModified": 1792256254,
+        "narHash": "sha256-yhrpuDdxLIB8l11cw8fgzlaubHwF0TnlCtHXj1qj2PM=",
         "owner": "aceinetx",
         "repo": "krbc",
-        "rev": "ea272ff47b953a0a906595bc4651078c882af4aa",
+        "rev": "768362ba38d5ccbf33f6268c82717b8b57b4239b",
         "type": "github"
       },
       "original": {
@@ -515,11 +515,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788361002,
-        "narHash": "sha256-mdQlrXlfvDCXIB1iO0xAQ3aW9LL25ApyZN25/Y3uAbg=",
+        "lastModified": 1792260036,
+        "narHash": "sha256-tVe7DKZtCVBnW/I1Y8ZAnbbwCe97szrNC/1s/PlR9F8=",
         "owner": "aceinetx",
         "repo": "namida-nix",
-        "rev": "0a6a7d2a491a8d040a526405bf81e6b0a899df43",
+        "rev": "458c2ca0faa2270646859063e5894de21c1c3da9",
         "type": "github"
       },
       "original": {
