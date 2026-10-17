@@ -430,11 +430,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791741231,
-        "narHash": "sha256-qWVkUbmGg7jjn90g7YOtuAzDD3rIv4YXizVIW+eG8eg=",
+        "lastModified": 1792174459,
+        "narHash": "sha256-iwsUp7dxR5+N49sqRZv/ipA2xCwjjYUuGptYqopn62k=",
         "owner": "aceinetx",
         "repo": "krbc",
-        "rev": "d3fd339311e80682f66c116dbebffe87b031c235",
+        "rev": "ea272ff47b953a0a906595bc4651078c882af4aa",
         "type": "github"
       },
       "original": {
