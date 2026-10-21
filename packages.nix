@@ -61,7 +61,6 @@
     raylib
     wget
     brightnessctl
-    lua
     cloc
     steam
     gdb
@@ -141,5 +140,9 @@
     cmake
     neovide
     tmux
+    lua54Packages.lua
+    lua54Packages.tl
+    lua54Packages.teal-language-server
+    emacs
   ];
 }
