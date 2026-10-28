@@ -42,8 +42,6 @@
     # neovim
     nil
     nixfmt
-    zig
-    zls
     xmake
     cargo
     rust-analyzer
@@ -144,5 +142,9 @@
     lua54Packages.tl
     lua54Packages.teal-language-server
     emacs
+    vis
+    nickel
+    tree-sitter
+    gzdoom
   ];
 }

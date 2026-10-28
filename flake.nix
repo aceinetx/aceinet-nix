@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     dwl = {
       url = "git+https://codeberg.org/aceinet/dwl.git";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -15,16 +16,8 @@
       url = "github:aceinetx/krbc";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    lampfm = {
-      url = "github:aceinetx/lampfm";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     sizeof = {
       url = "github:aceinetx/sizeof";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    paperstrap = {
-      url = "git+https://codeberg.org/aceinet/paperstrap.git";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     circuitjs = {
@@ -77,12 +70,11 @@
     {
       self,
       nixpkgs,
+      nixpkgs-unstable,
       dwl,
       gf2,
       krbc,
-      lampfm,
       sizeof,
-      paperstrap,
       circuitjs,
       namida,
       mathualizer,
@@ -121,13 +113,7 @@
             ./modules/mingw.nix
             ./modules/bincache.nix
 
-            (import ./home.nix (
-              with lampfm;
-              {
-                inherit createLampFMConfig;
-                inherit system;
-              }
-            ))
+            ./home.nix
 
             happ-nixos.nixosModules.happ-nixos
 
@@ -172,9 +158,7 @@
                 dwl
                 gf2
                 krbc
-                lampfm
                 sizeof
-                paperstrap
                 circuitjs
                 namida
                 mathualizer
@@ -189,7 +173,13 @@
             flakePackages
             ++ [
               pkgs.maven
-            ];
+            ]
+            ++ (with nixpkgs-unstable.legacyPackages.${system}; [
+              c3c
+              c3-lsp
+              zig_0_17
+              zls
+            ]);
         };
     };
 }
