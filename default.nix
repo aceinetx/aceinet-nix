@@ -11,5 +11,6 @@
     ./session-vars.nix
     ./users.nix
     ./networking.nix
+    ./fonts.nix
   ];
 }

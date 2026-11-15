@@ -3,7 +3,6 @@
 
   home-manager.users.aceinet = { pkgs, ... }: {
     imports = [
-      ./home_modules/fonts.nix
       ./home_modules/git.nix
       ./home_modules/gtk.nix
       ./home_modules/direnv.nix

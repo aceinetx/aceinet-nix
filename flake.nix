@@ -52,6 +52,10 @@
       url = "github:matteopolak/jacket";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    intel-one-mono-nerd-nix = {
+      url = "github:aceinetx/intel-one-mono-nerd-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     happ-nixos.url = "github:aceinetx/happ-nixos";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -87,6 +91,7 @@
       drop,
       ish,
       jacket,
+      intel-one-mono-nerd-nix,
       happ-nixos,
       home-manager,
       zapret-discord-youtube,
@@ -155,6 +160,11 @@
                 ipsetExclude = [ "203.0.113.0/24" ];
               };
             }
+
+          ];
+
+          fonts.packages = [
+            intel-one-mono-nerd-nix.packages.${system}.default
           ];
 
           environment.systemPackages =

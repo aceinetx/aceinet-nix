@@ -148,4 +148,6 @@
     gzdoom
     cdecl
   ];
+
+  fonts.fontconfig.enable = true;
 }
