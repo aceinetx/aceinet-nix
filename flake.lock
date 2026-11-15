@@ -342,6 +342,27 @@
         "type": "github"
       }
     },
+    "jacket": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1793232227,
+        "narHash": "sha256-O9cHCPbGgr/ydHD8a19avj87EwRNh71uv9zv2MIX5F8=",
+        "owner": "matteopolak",
+        "repo": "jacket",
+        "rev": "2555bd9a3b2f029003463c4ce74151d3a45571a7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "matteopolak",
+        "repo": "jacket",
+        "type": "github"
+      }
+    },
     "krbc": {
       "inputs": {
         "flake-utils": "flake-utils_5",
@@ -372,11 +393,11 @@
         "nixpkgs-unstable": "nixpkgs-unstable"
       },
       "locked": {
-        "lastModified": 1793199258,
-        "narHash": "sha256-ZILYKAYC+aI71UyISq3EKXM/koSRXug/TRpTMGOLl10=",
+        "lastModified": 1793903883,
+        "narHash": "sha256-gOj7H6X/PbbG1duNhm1ycDyr8mgUYlTxgbAOywYXSco=",
         "owner": "aceinetx",
         "repo": "lyricedit",
-        "rev": "e6959f01bf17627a05493c0eabce59794b9077d6",
+        "rev": "16869e4ecb4a31c6767d2d95b864e267c8d3f89b",
         "type": "github"
       },
       "original": {
@@ -610,6 +631,7 @@
         "happ-nixos": "happ-nixos",
         "home-manager": "home-manager",
         "ish": "ish",
+        "jacket": "jacket",
         "krbc": "krbc",
         "lyricedit": "lyricedit",
         "mathualizer": "mathualizer",
@@ -621,6 +643,27 @@
         "raddebugger": "raddebugger",
         "sizeof": "sizeof",
         "zapret-discord-youtube": "zapret-discord-youtube"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "jacket",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1791189933,
+        "narHash": "sha256-Y8eN7ki0Urx4Ojf4w1xSpWg8uk/3lJqK+E0Oth77rH0=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "e60029353d0c48d216bc4b065168ccd4079c166f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
       }
     },
     "sizeof": {

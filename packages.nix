@@ -146,5 +146,6 @@
     nickel
     tree-sitter
     gzdoom
+    cdecl
   ];
 }

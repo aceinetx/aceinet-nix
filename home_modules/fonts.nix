@@ -4,5 +4,6 @@
     nerd-fonts.terminess-ttf
     nerd-fonts.zed-mono
     nerd-fonts.bigblue-terminal
+    intel-one-mono
   ];
 }

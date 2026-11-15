@@ -48,6 +48,10 @@
       url = "github:aceinetx/ish";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    jacket = {
+      url = "github:matteopolak/jacket";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     happ-nixos.url = "github:aceinetx/happ-nixos";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
@@ -82,6 +86,7 @@
       raddebugger,
       drop,
       ish,
+      jacket,
       happ-nixos,
       home-manager,
       zapret-discord-youtube,
@@ -166,6 +171,7 @@
                 raddebugger
                 drop
                 ish
+                jacket
                 nix-auth
                 neovim-nightly-overlay
               ];
